@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.orm.pojo.Open" table="Open">
+		<id name="openID" column="open_id" type="long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="courseID" column="course_id" type="long"></property>
+		<property name="orderID" column="order_id" type="long"></property>
+		<property name="collegeID" column="college_id" type="long"></property>
+		<property name="teacherID" column="teacher_id" type="long"></property>
+		
+		<property name="countLimit" column="count_limit" type="long"></property>
+		<property name="countNow" column="count_now" type="long"></property>
+		
+		<property name="scoreKind" column="score_kind" type="string"></property>
+		
+		<property name="tableWeek" column="table_week" type="integer"></property>
+		<property name="tableDay" column="table_day" type="integer"></property>
+		<property name="period" column="period" type="long"></property>
+		<property name="periodType" column="period_type" type="string"></property>
+		<property name="address" column="address" type="string"></property>
+	
+		
+		<property name="courseType" column="course_type" type="string"></property>
+		<property name="credit" column="credit" type="float"></property>
+		
+		<property name="remark" column="remark" type="string"></property>
+		<property name="createDate" column="create_date" type="date"></property>
+		<property name="status" column="status" type="string"></property>
+	</class>
+</hibernate-mapping>

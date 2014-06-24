@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.orm.pojo.Message" table="Message">
+		<id name="messageID" column="message_id" type="long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="setter" column="setter" type="string"></property>
+		<property name="getter" column="getter" type="string"></property>
+		<property name="isRead" column="is_read" type="string"></property>
+		<property name="isReply" column="is_reply" type="string"></property>
+		<property name="readDate" column="read_date" type="date"></property>
+		<property name="tittle" column="tittle" type="string"></property>
+		
+		<property name="remark" column="remark" type="string"></property>
+		<property name="createDate" column="create_date" type="date"></property>
+		<property name="status" column="status" type="string"></property>
+	</class>
+</hibernate-mapping>

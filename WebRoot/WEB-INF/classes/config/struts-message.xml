@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="message" extends="base-default">
+		<action name="Msg_*" class="messageAction" method="{1}">
+			<result name="add">/WEB-INF/pages/message/message_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/message/message_edit.jsp</result>
+			<result name="list">/WEB-INF/pages/message/message_list.jsp</result>
+			<result name="load">/WEB-INF/pages/message/message_load.jsp</result>
+			<result name="del" type="redirect">Msg_listAll.action</result>
+			<result name="save" type="redirect">Msg_listAll.action</result>
+			<result name="update" type="redirect">Msg_listAll.action</result>
+			<result name="input">/WEB-INF/pages/message/message_edit.jsp</result>
+		</action>
+	</package>
+
+
+	<package name="messagee" extends="base-default">
+		<action name="MsgE_*" class="messageAction" method="{1}">
+			<result name="write">/WEB-INF/pages/message/message_write.jsp</result>
+			<result name="read">/WEB-INF/pages/message/message_read.jsp</result>
+			<result name="set" type="redirect">MsgE_listS.action</result>
+			<result name="lists">/WEB-INF/pages/message/message_list_s.jsp</result>
+			<result name="listg">/WEB-INF/pages/message/message_list_g.jsp</result>
+		</action>
+	</package>
+
+
+</struts>

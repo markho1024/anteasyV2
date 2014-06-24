@@ -1,0 +1,32 @@
+#header{
+	background:#E31559;
+}
+
+.left .branch .title {
+	background-color: #E31559;
+}
+
+.left .branch .shelf li:HOVER {
+	background-color:#FFECEC
+}
+
+.resList .listTable .trodd {
+	background-color: #FFECEC
+}
+
+.resList .listTable thead th {
+	background-color: #E31559;
+	color: #fff;
+}
+
+.resList .listTable tbody tr:hover {
+	background-color: #FF9797
+}
+
+#loginGo .loginTitle{
+	background:#E31559;
+}
+
+#timetables .timetable .tabletitle,#timetables .timetable .ths{
+	background-color: #FF9797
+}

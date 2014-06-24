@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="user" extends="base-default">
+		<action name="Usr_*" class="userAction" method="{1}">
+			<result name="add">/WEB-INF/pages/user/user_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/user/user_edit.jsp</result>
+			<result name="list">/WEB-INF/pages/user/user_list.jsp</result>
+			<result name="load">/WEB-INF/pages/user/user_load.jsp</result>
+			<result name="del" type="redirect">Usr_listAll.action</result>
+			<result name="save" type="redirect">Usr_listAll.action</result>
+			<result name="update" type="redirect">Usr_listAll.action</result>
+			<result name="input">/WEB-INF/pages/user/user_edit.jsp</result>
+		</action>
+	</package>
+
+	<package name="usere" extends="base-default">
+		<action name="UsrE_*" class="userAction" method="{1}">
+			<result name="editpw">/WEB-INF/pages/user/user_edit_pw.jsp</result>
+			<result name="updatet" type="redirect">/main.action</result>
+			
+            <result name="editc">/WEB-INF/pages/user/user_edit_c.jsp</result>
+			<result name="listc">/WEB-INF/pages/user/user_list_c.jsp</result>
+			<result name="loadc">/WEB-INF/pages/user/user_load_c.jsp</result>
+			<result name="updatec" type="redirect">UsrE_listC.action</result>
+		</action>
+	</package>
+	
+		<package name="userJson" extends="json-default">
+		<action name="UsrJ_*" class="userAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+
+	<!-- 设置action 注意 extends 为前面的"base-default" 不是"struts-default" 否则自定义的拦截器不会起作用 -->
+	<package name="login" extends="base-default">
+		<action name="login" class="loginAction" method="login">
+			<result name="login" type="redirect">/main.action
+			</result>
+			<result name="error">login.jsp</result>
+		</action>
+
+		<action name="main" class="loginAction" method="main">
+			<result name="main">/WEB-INF/pages/main/main.jsp
+			</result>
+		</action>
+
+		<action name="logout" class="loginAction" method="logout">
+			<result name="logouted" type="redirect">login.jsp</result>
+		</action>
+	</package>
+
+	<package name="jsonLogin" extends="json-default">
+		<action name="lgnJ_*" class="loginAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+</struts>

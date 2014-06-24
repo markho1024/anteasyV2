@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="open" extends="base-default">
+		<action name="Opn_*" class="openAction" method="{1}">
+			<result name="add">/WEB-INF/pages/open/open_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/open/open_edit.jsp</result>
+			<result name="list">/WEB-INF/pages/open/open_list.jsp</result>
+			<result name="load">/WEB-INF/pages/open/open_load.jsp</result>
+			<result name="del" type="redirect">Opn_listAll.action</result>
+			<result name="save" type="redirect">Opn_listAll.action</result>
+			<result name="update" type="redirect">Opn_listAll.action</result>
+			<result name="input">/WEB-INF/pages/open/open_edit.jsp</result>
+		</action>
+	</package>
+	
+	<package name="opene" extends="base-default">
+		<action name="OpnE_*" class="openAction" method="{1}">
+			<result name="listt">/WEB-INF/pages/open/open_list_t.jsp</result>
+			<result name="loadt">/WEB-INF/pages/open/open_load_t.jsp</result>
+			
+			<result name="addc">/WEB-INF/pages/open/open_add_c.jsp</result>
+			<result name="editc">/WEB-INF/pages/open/open_edit_c.jsp</result>
+			<result name="listc">/WEB-INF/pages/open/open_list_c.jsp</result>
+			<result name="listb">/WEB-INF/pages/open/open_list_b.jsp</result>
+			<result name="loadc">/WEB-INF/pages/open/open_load_c.jsp</result>
+			<result name="delc" type="redirect">OpnE_listC.action</result>
+			<result name="savec" type="redirect">OpnE_listC.action</result>
+			<result name="updatec" type="redirect">OpnE_listC.action</result>
+			<result name="input">/WEB-INF/pages/open/open_edit_c.jsp</result>
+			
+			<result name="dischoose">/WEB-INF/pages/choice/choice_dischoose.jsp</result>
+			<result name="dislog">/WEB-INF/pages/score/score_dislog.jsp</result>
+		</action>
+	</package>
+
+	<package name="openJson" extends="json-default">
+		<action name="OpnJ_*" class="openAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+</struts>

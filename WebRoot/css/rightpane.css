@@ -1,0 +1,342 @@
+@CHARSET "UTF-8";
+
+@IMPORT url("specil.css");
+
+/*右侧样式开始*/
+#rightlist {
+	
+}
+
+/*导航文字样式开始*/
+.navTittle {
+	line-height: 26px;
+	color: black;
+	height: 26px;
+}
+
+/*搜索表单样式开始*/
+.navSearch table {
+	border-left: 1px solid #a3c7e4;
+	border-top: 1px solid #a3c7e4;
+	margin-left: 1%;
+	margin-right: auto;
+	width: 98%;
+	margin-top: 5px;
+}
+
+.navSearch fieldset {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.navSearch legend {
+	cursor: pointer;
+	padding-right: 16px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+
+.navSearch table th {
+	text-align: right;
+	border-bottom: 1px solid #a3c7e4;
+	border-right: 1px solid #a3c7e4;
+	padding: 3px;
+	width: 20%;
+}
+
+.navSearch table td {
+	border-bottom: 1px solid #a3c7e4;
+	border-right: 1px solid #a3c7e4;
+	padding: 3px;
+	width:30%
+}
+
+/*搜索结果表格样式开始*/
+.resList {
+	margin-top: 25px;
+}
+
+.resList .listTable {
+	border-left: 1px solid #a3c7e4;
+	border-top: 1px solid #a3c7e4;
+	margin-left: 1%;
+	margin-right: auto;
+	width: 98%;
+	margin-top: 5px;
+}
+
+.resList .listTable td,.listTable th {
+	border-bottom: 1px solid #a3c7e4;
+	border-right: 1px solid #a3c7e4;
+	padding: 3px;
+}
+
+.resList .listTable thead tr {
+	background-color: #F0F0F0;
+}
+
+.resList .listTable .trodd {
+	background-color: #ECECFF;
+}
+
+.resList .listTable thead th {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	background-color:  #3B5998;
+	color: #fff;
+}
+
+.resList .listTable thead .no {
+   width: 7%;
+}
+
+.resList .listTable tbody td {
+	text-align: center;
+	
+}
+
+.resList .listTable tbody tr:hover {
+	background-color: #ADCCFA;
+}
+
+/*结果页面导航样式开始*/
+.resPage {
+	margin-left: 10px;
+}
+
+/*查看表单样式开始*/
+.loadtable {
+	
+}
+
+.loadtable .title {
+	width: 670px;
+	height: 35px;
+	line-height: 35px;
+	clear: both;
+	border-top: 1px solid #cad6df;
+	padding: 0 15px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+
+.loadtable .maintable {
+	width: 704px;
+	clear: both;
+	margin: 0px auto;
+	padding: 20px 0;
+}
+
+.loadtable .maintable li {
+	clear: both;
+	font-family: Verdana, "宋体";
+}
+
+.loadtable .mainth {
+	float: left;
+	width: 175px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.loadtable .maintd {
+	float: left;
+	width: 520px;
+	line-height: 30px;
+	height: 30px;
+	margin-bottom: 12px;
+}
+
+.loadtable .maintd .playbox {
+	float: left;
+	margin-left: 20px;
+}
+.loadtable .maintd .playbox .word {
+    width: 400px;
+}
+
+/*修改、增加表单样式开始*/
+.addtable {
+	
+}
+
+.addtable .title {
+	width: 670px;
+	height: 35px;
+	line-height: 35px;
+	clear: both;
+	border-top: 1px solid #cad6df;
+	padding: 0 15px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+
+.addtable .maintable {
+	width: 704px;
+	clear: both;
+	margin: 0px auto;
+	padding: 20px 0;
+}
+
+.addtable .maintable li {
+	clear: both;
+	font-family: Verdana, "宋体";
+}
+
+.addtable .mainth {
+	float: left;
+	width: 175px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.addtable .maintd {
+	float: left;
+	width: 520px;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+.addtable .maintd .inputbox {
+	float: left;
+}
+
+.addtable .maintd .inputbox .input {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding: 4px 10px 0 0;
+}
+.addtable .maintd .inputbox .radio {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding: 4px 10px 0 0;
+}
+
+.addtable .maintd .inputbox .input input {
+	background-color: #FFFF99;
+	width: 160px;
+	height: 18px;
+	line-height: 18px;
+	padding: 2px 2px 0 0;
+	font-family: Verdana, "宋体";
+}
+
+.addtable .maintd .inputbox .input textarea {
+	background-color: #FFFF99;
+	line-height: 18px;
+	padding: 2px 2px 0 0;
+	font-family: Verdana, "宋体";
+}
+
+.addtable .maintd .inputbox .input .disinput {
+	background-color: #E7E7E7;
+}
+.addtable .maintd .inputbox .errs {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	padding: 4px 10px 0 0;
+}
+
+.addtable .maintd .inputtxt {
+	clear: both;
+	padding-top: 4px;
+	color: gray;
+}
+
+.addtable .maintd .textareatxt {
+	clear: both;
+	padding-top: 108px;
+	color: gray;
+}
+
+/*表单修改、添加按钮样式开始*/
+.editButton {
+	text-align: right;
+	margin-right: 376px;
+}
+
+.editButton .buttonlt {
+	width: 70px;
+	height: 28px;
+	margin-right: 20px;
+	font-size: 1.2em;
+}
+
+.editButton .buttons {
+	width: 70px;
+	height: 28px;
+	margin-right: 15px;
+	font-size: 1.2em;
+}
+
+
+/*表单按钮样式开始*/
+.loadButton {
+	text-align: right;
+	margin-right: 376px;
+	margin-top: 100px;
+}
+
+.loadButton .buttonlt {
+	width: 70px;
+	height: 28px;
+	margin-right: 20px;
+	font-size: 1.2em;
+}
+
+.loadButton .buttons {
+	width: 70px;
+	height: 28px;
+	margin-right: 15px;
+	font-size: 1.2em;
+}
+
+/*表单按钮样式开始*/
+.ctrlButton {
+	text-align: right;
+}
+
+.ctrlButton .buttonlt {
+	margin-top: 6px;
+	width: 70px;
+	height: 28px;
+	margin-right: 20px;
+	font-size: 1.2em;
+}
+
+.ctrlButton .buttons {
+	margin-top: 6px;
+	width: 70px;
+	height: 28px;
+	margin-right: 15px;
+	font-size: 1.2em;
+}
+
+.ctrl {
+	text-align: center;
+}
+
+.ctrl .bt {
+	margin-top: 25px;
+	margin-right: 10px;
+	width: 70px;
+	height: 28px;
+	font-size: 1.2em;
+}
+
+#updown {
+	color: #a3c7e4;
+	padding-left: 10px;
+}

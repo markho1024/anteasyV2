@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="clazz" extends="base-default">
+		<action name="Clz_*" class="clazzAction" method="{1}">
+			<result name="add">/WEB-INF/pages/clazz/clazz_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/clazz/clazz_edit.jsp</result>
+			<result name="list">/WEB-INF/pages/clazz/clazz_list.jsp</result>
+			<result name="load">/WEB-INF/pages/clazz/clazz_load.jsp</result>
+			<result name="del" type="redirect">Clz_listAll.action</result>
+			<result name="save" type="redirect">Clz_listAll.action</result>
+			<result name="update" type="redirect">Clz_listAll.action</result>
+			<result name="input">/WEB-INF/pages/clazz/clazz_edit.jsp</result>
+		</action>
+	</package>
+	
+		<package name="clazze" extends="base-default">
+		<action name="ClzE_*" class="clazzAction" method="{1}">
+			<result name="addc">/WEB-INF/pages/clazz/clazz_add_c.jsp</result>
+			<result name="editc">/WEB-INF/pages/clazz/clazz_edit_c.jsp</result>
+			<result name="listc">/WEB-INF/pages/clazz/clazz_list_c.jsp</result>
+			<result name="loadc">/WEB-INF/pages/clazz/clazz_load_c.jsp</result>
+			<result name="delc" type="redirect">ClzE_listC.action</result>
+			<result name="savec" type="redirect">ClzE_listC.action</result>
+			<result name="updatec" type="redirect">ClzE_listC.action</result>
+			<result name="input">/WEB-INF/pages/clazz/clazz_edit_c.jsp</result>
+		</action>
+	</package>
+
+	<package name="clazzJson" extends="json-default">
+		<action name="ClzJ_*" class="clazzAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+</struts>

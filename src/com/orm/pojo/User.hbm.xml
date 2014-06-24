@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.orm.pojo.User" table="User">
+		<id name="userID" column="user_id" type="long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="loginID" column="login_id" type="string"></property>
+		<property name="userName" column="user_name" type="string"></property>
+		<property name="password" column="password" type="string"></property>
+		<property name="userType" column="user_type" type="string"></property>
+		<property name="collegeID" column="college_id" type="long"></property>
+
+		<property name="remark" column="remark" type="string"></property>
+		<property name="createDate" column="create_date" type="date"></property>
+		<property name="status" column="status" type="string"></property>
+	</class>
+</hibernate-mapping>

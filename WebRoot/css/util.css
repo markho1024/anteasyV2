@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+.red{
+	color: red;
+}
+
+#timetables .timetable{
+	width: 790px;
+	padding: 10px,10px,10px.10px;
+	height: 300px;
+	background-color: #dde;
+}
+
+#timetables .timetable .tabletitle{
+	height: 10px;
+	background: #ffeeff;
+}
+#timetables .timetable .ths{
+	width:40px;
+	background: #ffeeff;
+	text-align: center;
+}
+#timetables .timetable .tds{
+	width:60px;
+	background-color: white;
+	text-align: center;
+}

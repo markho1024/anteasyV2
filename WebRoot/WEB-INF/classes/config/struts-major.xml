@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="major" extends="base-default">
+		<action name="Mjr_*" class="majorAction" method="{1}">
+			<result name="add">/WEB-INF/pages/major/major_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/major/major_edit.jsp</result>
+			<result name="list">/WEB-INF/pages/major/major_list.jsp</result>
+			<result name="load">/WEB-INF/pages/major/major_load.jsp</result>
+			<result name="del" type="redirect">Mjr_listAll.action</result>
+			<result name="save" type="redirect">Mjr_listAll.action</result>
+			<result name="update" type="redirect">Mjr_listAll.action</result>
+			<result name="input">/WEB-INF/pages/major/major_edit.jsp</result>
+		</action>
+	</package>
+	
+	<package name="majore" extends="base-default">
+		<action name="MjrE_*" class="majorAction" method="{1}">
+			<result name="addc">/WEB-INF/pages/major/major_add_c.jsp</result>
+			<result name="editc">/WEB-INF/pages/major/major_edit_c.jsp</result>
+			<result name="listc">/WEB-INF/pages/major/major_list_c.jsp</result>
+			<result name="loadc">/WEB-INF/pages/major/major_load_c.jsp</result>
+			<result name="delc" type="redirect">MjrE_listC.action</result>
+			<result name="savec" type="redirect">MjrE_listC.action</result>
+			<result name="updatec" type="redirect">MjrE_listC.action</result>
+			<result name="input">/WEB-INF/pages/major/major_edit_c.jsp</result>
+		</action>
+	</package>
+	
+	<package name="majorJson" extends="json-default">
+		<action name="MjrJ_*" class="majorAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+</struts>

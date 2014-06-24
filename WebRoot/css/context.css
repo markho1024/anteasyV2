@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+/*主体管理*/
+#context {
+	margin: 10px auto;
+	width: 1003px;
+}
+
+/*左边导航管理*/
+.left {
+	border: 1px solid #AAAAAA;
+	width: 16%;
+	float: left;
+	margin-right: 10px;
+}
+
+.left .branch {
+	
+}
+
+.left .branch .title {
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #3B5998;
+	color: white;
+	padding: 4px;
+	padding-left: 20px;
+}
+
+.left .branch .shelf {
+}
+
+.left .branch .shelf .cell {
+	padding: 4px;
+	padding-left: 40px;
+	font-size: 14px;
+	font-style: inherit;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #999999;
+	list-style-type: none;
+}
+.left .branch .shelf .cellt {
+	padding: 4px;
+	padding-left: 40px;
+	font-size: 14px;
+	font-style: inherit;
+
+}
+
+.left .branch .shelf li:HOVER {
+	background-color: #ECECFF;
+}
+
+.left .branch .shelf a:link {
+	color: gray;
+	text-decoration: none;
+}
+
+.left .branch .shelf a:visited {
+	color: gray;
+	text-decoration: none;
+}
+
+.left .branch .shelf a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.left .branch .shelf a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+/*右边显示管理*/
+.right {
+	width: 82.8%;
+	float: left;
+}

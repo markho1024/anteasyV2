@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="help" extends="base-default">
+		<action name="Hlp_*" class="helpAction" method="{1}">
+			<result name="help">/WEB-INF/pages/main/help.jsp</result>
+		</action>
+	</package>
+</struts>

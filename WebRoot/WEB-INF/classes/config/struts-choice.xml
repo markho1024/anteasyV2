@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="choice" extends="base-default">
+		<action name="Chc_*" class="choiceAction" method="{1}">
+			<result name="add">/WEB-INF/pages/choice/choice_add.jsp</result>
+			<result name="list">/WEB-INF/pages/choice/choice_list.jsp</result>
+			<result name="del" type="redirect">Chc_listAll.action</result>
+			<result name="save" type="redirect">Chc_listAll.action</result>
+			<result name="update" type="redirect">Chc_listAll.action</result>
+			<result name="input" type="redirect">Chc_listAll.action</result>
+		</action>
+	</package>
+	
+		<package name="choicee" extends="base-default">
+		<action name="ChcE_*" class="choiceAction" method="{1}">
+			<result name="choicet">/WEB-INF/pages/choice/choice_list_t.jsp</result>
+			<result name="choices">/WEB-INF/pages/choice/choice_list_s.jsp</result>
+			<result name="choicea">/WEB-INF/pages/choice/choice_list_a.jsp</result>
+			<result name="choose">/WEB-INF/pages/choice/choice_choose.jsp</result>
+			<result name="dischoose">/WEB-INF/pages/choice/choice_dischoose.jsp</result>
+        	<result name="schoose" type="redirect">ChcE_choose.action</result> 
+        	<result name="delt" type="redirect">ChcE_choose.action</result>
+        	
+        	<result name="addc">/WEB-INF/pages/choice/choice_add_c.jsp</result>
+			<result name="listc">/WEB-INF/pages/choice/choice_list_c.jsp</result>
+			<result name="loadc">/WEB-INF/pages/choice/choice_load_c.jsp</result>
+			<result name="delc" type="redirect">ChcE_listC.action</result>
+			<result name="savec" type="redirect">ChcE_listC.action</result>
+			<result name="input">/WEB-INF/pages/choice/choice_edit_c.jsp</result>
+		</action>
+	</package>
+
+	<package name="choiceJson" extends="json-default">
+		<action name="ChcJ_*" class="choiceAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+</struts>

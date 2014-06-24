@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.orm.pojo.Pick" table="Pick">
+		<id name="pickID" column="pick_id" type="long">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="studentID" column="student_id" type="long"></property>
+		<property name="openID" column="open_id" type="long"></property>
+		
+		<property name="scoreType" column="score_type" type="string"></property>
+		<property name="score" column="score" type="string"></property>
+		<property name="point" column="point" type="long"></property>
+		<property name="examDate" column="exam_date" type="date"></property>
+		<property name="logStatus" column="log_status" type="string"></property>
+		
+		<property name="remark" column="remark" type="string"></property>
+		<property name="createDate" column="create_date" type="date"></property>
+		<property name="status" column="status" type="string"></property>
+	</class>
+</hibernate-mapping>

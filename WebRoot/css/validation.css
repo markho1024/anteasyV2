@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+input.error { border: 1px solid red; }
+label.error {
+  background:url("../images/no.png") no-repeat 0px 0px;
+  padding-left: 20px;
+  margin-left:4px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size:1.2em;
+  color: red;
+}
+label.success {
+  background:url("../tool/jquery-validation-1.9.0/demo/images/checked.gif") no-repeat 0px 0px;
+   padding-left: 16px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: green;
+}

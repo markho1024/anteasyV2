@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.orm.pojo.Student" table="Student">
+		<id name="studentID" column="student_id" type="long">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="studentName" column="student_name" type="string"></property>
+
+		<property name="collegeID" column="college_id" type="long"></property>
+		<property name="majorID" column="major_id" type="long"></property>
+		<property name="clazzID" column="clazz_id" type="long"></property>
+		<property name="studentType" column="student_type" type="string"></property>
+
+		<property name="sex" column="sex" type="string"></property>
+		<property name="idCard" column="id_card" type="string"></property>
+		<property name="birthday" column="birthday" type="date"></property>
+		<property name="nation" column="nation" type="string"></property>
+		<property name="party" column="party" type="string"></property>
+		<property name="jionDate" column="jion_date" type="date"></property>
+		<property name="phone" column="phone" type="string"></property>
+		<property name="email" column="email" type="string"></property>
+		<property name="homeAddress" column="home_address" type="string"></property>
+		<property name="mailCode" column="mail_code" type="string"></property>
+		<property name="hometown" column="hometown" type="string"></property>
+		<property name="graSchool" column="gra_school" type="string"></property>
+
+		<property name="homePhone" column="home_phone" type="string"></property>
+		<property name="parentName" column="parent_name" type="string"></property>
+		<property name="parentPhone" column="parent_phone" type="string"></property>
+
+		<property name="remark" column="remark" type="string"></property>
+		<property name="createDate" column="create_date" type="date"></property>
+		<property name="status" column="status" type="string"></property>
+	</class>
+</hibernate-mapping>

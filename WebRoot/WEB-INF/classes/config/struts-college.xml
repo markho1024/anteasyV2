@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="college" extends="base-default">
+		<action name="Clg_*" class="collegeAction" method="{1}">
+			<result name="add">/WEB-INF/pages/college/college_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/college/college_edit.jsp</result>
+			<result name="list">/WEB-INF/pages/college/college_list.jsp</result>
+			<result name="load">/WEB-INF/pages/college/college_load.jsp</result>
+			<result name="del" type="redirect">Clg_listAll.action</result>
+			<result name="save" type="redirect">Clg_listAll.action</result>
+			<result name="update" type="redirect">Clg_listAll.action</result>
+			<result name="input">/WEB-INF/pages/college/college_edit.jsp</result>
+		</action>
+	</package>
+	
+	<package name="collegeJson" extends="json-default">
+		<action name="ClgJ_*" class="collegeAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+</struts>

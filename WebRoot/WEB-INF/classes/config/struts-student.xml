@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="student" extends="base-default">
+		<action name="Std_*" class="studentAction" method="{1}">
+			<result name="add">/WEB-INF/pages/student/student_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/student/student_edit.jsp</result>
+			<result name="list">/WEB-INF/pages/student/student_list.jsp</result>
+			<result name="load">/WEB-INF/pages/student/student_load.jsp</result>
+			<result name="del" type="redirect">Std_listAll.action</result>
+			<result name="save" type="redirect">Std_listAll.action</result>
+			<result name="update" type="redirect">Std_listAll.action</result>
+			<result name="input">/WEB-INF/pages/student/student_edit.jsp</result>
+		</action>
+	</package>
+	
+	<package name="studente" extends="base-default">
+		<action name="StdE_*" class="studentAction" method="{1}">
+			<result name="loadt">/WEB-INF/pages/student/student_load_t.jsp</result>
+			<result name="editt">/WEB-INF/pages/student/student_edit_t.jsp</result>
+		   <result name="updatet" type="redirect">StdE_loadT.action</result>
+		   
+		   	<result name="addc">/WEB-INF/pages/student/student_add_c.jsp</result>
+			<result name="editc">/WEB-INF/pages/student/student_edit_c.jsp</result>
+			<result name="listc">/WEB-INF/pages/student/student_list_c.jsp</result>
+			<result name="loadc">/WEB-INF/pages/student/student_load_c.jsp</result>
+			<result name="delc" type="redirect">StdE_listC.action</result>
+			<result name="savec" type="redirect">StdE_listC.action</result>
+			<result name="updatec" type="redirect">StdE_listC.action</result>
+			<result name="input">/WEB-INF/pages/student/student_edit_c.jsp</result>
+		</action>
+	</package>
+	
+		<package name="studentJson" extends="json-default">
+		<action name="SdtJ_*" class="studentAction" method="{1}">
+			<result name="json" type="json" />
+		</action>
+	</package>
+</struts>
